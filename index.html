@@ -14,7 +14,11 @@
         id="temperatureInput"
         placeholder="Enter temperature"
       />
-      <button id="convertButton" onclick="convert()">Convert</button>
+      <div id="btn-container">
+        <button id="convertButton" onclick="convert()">Convert</button>
+        <button id="resetButton" onclick="reset()">Reset</button>
+      </div>
+
       <div>
         <input type="radio" id="celsiusToFahrenheit" name="Temp" />
         <label for="celsiusToFahrenheit">Celsius to Fahrenheit</label>

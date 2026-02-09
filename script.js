@@ -31,3 +31,10 @@ function convert()
     else
         document.getElementById("result").textContent="Please select a conversion type.";
 }
+function reset()
+{
+    document.getElementById("temperatureInput").value="";
+    document.getElementById("result").textContent="";
+    document.getElementById("celsiusToFahrenheit").checked=false;
+    document.getElementById("fahrenheitToCelsius").checked=false;
+}

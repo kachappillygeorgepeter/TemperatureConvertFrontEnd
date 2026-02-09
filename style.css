@@ -27,7 +27,12 @@ body {
     text-align: center;
     align-content: center;
 }
-#convertButton{
+btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+#convertButton, #resetButton{
     padding: 10px 20px;
     background-color: #bcbcbc;
     color: white;
