@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <title>Temperature Converter</title>
+  </head>
+  <body>
+    <section id="hero-card">
+      <h1 id="hero">Temperature Converter</h1>
+      <input
+        type="number"
+        id="temperatureInput"
+        placeholder="Enter temperature"
+      />
+      <button id="convertButton" onclick="convert()">Convert</button>
+      <div>
+        <input type="radio" id="celsiusToFahrenheit" name="Temp" />
+        <label for="celsiusToFahrenheit">Celsius to Fahrenheit</label>
+      </div>
+      <div>
+        <input type="radio" id="fahrenheitToCelsius" name="Temp" />
+        <label for="fahrenheitToCelsius">Fahrenheit to Celsius</label>
+      </div>
+      <p id="result"></p>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
