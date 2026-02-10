@@ -10,7 +10,7 @@ body {
     align-items: center;
     background-image: url(Images/bg.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: left center;
     background-repeat: no-repeat;
     font-family: monospace;
     letter-spacing: 1px;

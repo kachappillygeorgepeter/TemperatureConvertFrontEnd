@@ -21,15 +21,21 @@ function fahrenheitToCelsius()
     }
 }
 function convert()
-{
-    const celsiusToFahrenheitRadio=document.getElementById("celsiusToFahrenheit").checked;
-    const fahrenheitToCelsiusRadio=document.getElementById("fahrenheitToCelsius").checked;
-    if(celsiusToFahrenheitRadio)
-        celsiusToFahrenheit();
-    else if(fahrenheitToCelsiusRadio)
-        fahrenheitToCelsius();
+{   
+    const number=document.getElementById("temperatureInput").value;
+    if(number==="")
+        document.getElementById("result").textContent="Please enter a number";
     else
-        document.getElementById("result").textContent="Please select a conversion type.";
+    {
+        const celsiusToFahrenheitRadio=document.getElementById("celsiusToFahrenheit").checked;
+        const fahrenheitToCelsiusRadio=document.getElementById("fahrenheitToCelsius").checked;
+        if(celsiusToFahrenheitRadio)
+            celsiusToFahrenheit();
+        else if(fahrenheitToCelsiusRadio)
+            fahrenheitToCelsius();
+        else
+            document.getElementById("result").textContent="Please select a conversion type.";
+    }
 }
 function reset()
 {
